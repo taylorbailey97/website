@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px 15px;
+}
+.pictures img {
+  width: 80%;
+  height: 400px;
+}
+
+.contact {
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+.secHead {
+  background-image: linear-gradient(to left top, rgba(18, 145, 164, 0.2), rgba(18, 145, 164, 0.7));
+  padding: 1.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.secBody {
+  margin: 15px auto;
+  padding: 15px;
+}
+.secBody h4 {
+  padding: 15px 0;
+  font-size: 1.2rem;
+}
+.secBody a {
+  color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  .pictures {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .secBody {
+    width: 50%;
+  }
+}
+.images {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px 15px;
+}
+
+.image img {
+  width: 80%;
+  height: 400px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media only screen and (min-width: 600px) {
+  .images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+table {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+th {
+  background-image: linear-gradient(to left top, rgba(18, 145, 164, 0.2), rgba(18, 145, 164, 0.7));
+}
+
+form {
+  text-align: left;
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.form-style-8 {
+  font-family: "Open Sans Condensed", arial, sans;
+  width: 80%;
+  padding: 30px;
+  background: #FFFFFF;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.form-style-8 h2 {
+  background-image: linear-gradient(to left top, rgba(18, 145, 164, 0.2), rgba(18, 145, 164, 0.7));
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+}
+
+.form-style-8 input[type=text],
+.form-style-8 input[type=date],
+.form-style-8 input[type=datetime],
+.form-style-8 input[type=email],
+.form-style-8 input[type=number],
+.form-style-8 input[type=search],
+.form-style-8 input[type=time],
+.form-style-8 input[type=url],
+.form-style-8 input[type=password],
+.form-style-8 textarea,
+.form-style-8 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+}
+
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.form-style-8 input[type=button],
+.form-style-8 input[type=submit] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  background-color: #2CBBBB;
+  border: 1px solid #27A0A0;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.form-style-8 input[type=button]:hover,
+.form-style-8 input[type=submit]:hover {
+  background: linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+  background-color: #34CACA;
+}
+
+.selectBtn {
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  background-color: #2CBBBB;
+  border: 1px solid #27A0A0;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#id {
+  display: none;
+}
+
+.selectForm {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: linear-gradient(to bottom right, #ffd2b8, rgba(255, 210, 184, 0.9));
+  padding: 0.3rem 1rem 0.3rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.mast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.brand {
+  padding-left: 6rem;
+}
+.brand h1 {
+  font-family: "Great Vibes";
+  font-weight: 100;
+  font-size: 3rem;
+}
+.brand a {
+  text-decoration: none;
+  color: black;
+}
+.brand p {
+  font-family: sans-serif;
+  text-align: right;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.logo {
+  transform: scaleX(-1);
+  position: absolute;
+  height: 8rem;
+  left: 0;
+  top: 0;
+}
+
+.active {
+  background-image: url(../images/stroke.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header-nav {
+  display: none;
+  margin-top: 0;
+  text-align: center;
+}
+.header-nav a {
+  color: black;
+  text-decoration: none;
+  padding: 1.2rem 4rem;
+}
+.header-nav li {
+  list-style: none;
+  padding: 1.2rem;
+}
+
+.show {
+  display: inline-block;
+}
+
+body {
+  margin-top: 6rem;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+footer {
+  background-image: linear-gradient(to bottom right, rgba(255, 210, 184, 0.2), rgba(255, 210, 184, 0.9));
+  padding: 1.2rem;
+}
+footer ul {
+  max-width: 20%;
+  margin: 0 auto;
+  list-style: none;
+}
+footer li {
+  margin-top: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  .header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  body {
+    margin-top: 9rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

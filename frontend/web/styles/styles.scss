@@ -1,16 +1,154 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
-$background: #FFD2B8;
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+@import "home";
+@import "gallery";
+@import "service";
+@import "contact";
+@import "schedule";
+$background: #ffd2b8;
 $hover: #bbb;
 $color: black;
-$height: .3rem;
+$height: 0.3rem;
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 210, 184, 1),
+    rgba(255, 210, 184, 0.9)
+  );
+  padding: $height 1rem $height 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.mast {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Hamburger menu icon
+.menu {
+  cursor: pointer;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+// Background of brand
+.brand {
+  padding-left: 6rem;
+
+  h1 {
+    font-family: "Great Vibes";
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color;
+  }
+
+  p {
+    font-family: sans-serif;
+    text-align: right;
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+}
+
+.logo {
+  transform: scaleX(-1);
+  position: absolute;
+  height: 8rem;
+  left: 0;
+  top: 0;
+}
 
 .active {
-    background-image: url(../images/stroke.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain
+  background-image: url(../images/stroke.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .header-nav {
+  display: none;
+  margin-top: 0;
+  text-align: center;
+  a {
+    color: $color;
+    text-decoration: none;
+    padding: 1.2rem 4rem;
+  }
+  li {
+    list-style: none;
+    padding: 1.2rem;
+  }
+}
+
+.show {
+  display: inline-block;
+}
+
+// Body
+
+body {
+  margin-top: $height * 20;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+// footer
+footer {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 210, 184, 0.2),
+    rgba(255, 210, 184, 0.9)
+  );
+  padding: 1.2rem;
+
+  ul {
+    max-width: 20%;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  li {
+    margin-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu {
     display: none;
+  }
+
+  body {
+    margin-top: $height * 30;
+  }
 }

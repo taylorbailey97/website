@@ -1,0 +1,18 @@
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px 15px;
+}
+
+.image img {
+    width: 80%;
+    height: 400px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media only screen and (min-width: 600px) {
+    .images {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
