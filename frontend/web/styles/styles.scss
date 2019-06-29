@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+$background: #FFD2B8;
+$hover: #bbb;
+$color: black;
+$height: .3rem;
+
+.active {
+    background-image: url(../images/stroke.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.header-nav {
+    display: none;
+}
