@@ -1,3 +1,16 @@
+-- Messages table --
+CREATE TABLE messages (
+	msgID serial primary key,
+	fName VARCHAR(80) not null,
+	email VARCHAR(80) not null,
+	msg VARCHAR(800) not null
+);
+
+INSERT INTO messages (fName, email, msg)
+VALUES ('Taylor Bailey', 'test@test.com', 'Test message');
+
+SELECT * FROM messages;
+
 -- Schedules table --
 CREATE TABLE schedules (
 	schID serial primary key,
@@ -55,10 +68,3 @@ WHERE schID = 2;
 SELECT appointments.fName, appointments.pNumber, appointments.email, schedules.sTime, schedules.taken, appointments.sComment FROM appointments
 RIGHT JOIN schedules
 on appointments.schID=schedules.schID;
-
-
-
-
-
-
-
